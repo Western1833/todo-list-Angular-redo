@@ -1,10 +1,10 @@
 <ul>
-    <li *ngFor="let item of items" [ngClass]="{ 'active': isActive }">
+    <li *ngFor="let item of items" [ngClass]="{'active': item === this.selectedItem}">
         <div class="textContent">
-            {{ item }}
+            {{ item.value }}
         </div>
         <div class="buttons">
-            <button id="done" (click)="checkHandler()"><fa-icon [icon]="faCheck"></fa-icon></button>
+            <button id="done" (click)="checkHandler(item.id)"><fa-icon [icon]="faCheck"></fa-icon></button>
             <button id="edit" (click)="editHandler()"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
             <button id="delete" (click)="deleteHandler()"><fa-icon [icon]="faTrash"></fa-icon></button>
         </div>

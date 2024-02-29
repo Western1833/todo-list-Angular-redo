@@ -1,5 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
-import { DataService } from '../services/shared.service';
+import { DataService, DataItem } from '../services/shared.service';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./result-container.component.css']
 })
 export class ResultContainerComponent implements OnDestroy {
-  newItem: string[] = [];
+  newItem: DataItem[] = [];
 
   private subscription: Subscription;
 
