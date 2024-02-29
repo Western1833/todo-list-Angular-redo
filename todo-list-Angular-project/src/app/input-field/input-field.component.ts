@@ -14,7 +14,9 @@ export class InputFieldComponent {
   }
 
   inputDataHandler() {
-    console.log(this.newItem);
+    if(!this.newItem){
+      return;
+    }
     this.dataService.addData(this.newItem);
     this.newItem = '';
   }

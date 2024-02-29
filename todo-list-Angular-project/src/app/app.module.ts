@@ -14,7 +14,7 @@ import { ResultContainerComponent } from './result-container/result-container.co
     ContainerComponent,
     InputFieldComponent,
     ListItemsComponent,
-    ResultContainerComponent
+    ResultContainerComponent,
   ],
   imports: [
     BrowserModule,

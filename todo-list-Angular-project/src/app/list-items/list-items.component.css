@@ -1,10 +1,69 @@
 ul {
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.3em;
 }
 
 ul li {
     text-align: left;
+    width: 100%;
     margin-left: -30px;
     word-break: break-word;
-    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 1px solid black;
+    border-radius: 0.4em;
+    background-color: rgb(112, 112, 168, 0.4);
+    padding: 0.2em 0.2em;
+    gap: 2em;
+}
+
+.textContent {
+    max-width: 200px;
+}
+
+.buttons {
+    flex-wrap: wrap;
+}
+
+.buttons #done {
+    border: none;
+    border-radius: 0.4em;
+    padding: 0.3em;
+}
+
+.buttons #done:hover {
+    outline: 1px solid rgb(101, 15, 15);
+    background-color: rgb(30, 167, 30);
+    border-radius: 0.4em;
+}
+
+.buttons #edit {
+    border: none;
+    border-radius: 0.4em;
+    margin-left: 0.2em;
+    padding: 0.3em;
+}
+
+.buttons #edit:hover{
+    outline: 1px solid rgb(101, 15, 15);
+    background-color: rgb(219, 219, 58);
+    border-radius: 0.4em;
+}
+
+.buttons #delete {
+    border: none;
+    border-radius: 0.4em;
+    margin-left: 0.2em;
+    padding: 0.3em;
+}
+
+.buttons #delete:hover {
+    outline: 1px solid rgb(101, 15, 15);
+    background-color: red;
+    border-radius: 0.4em;
 }
