@@ -20,21 +20,20 @@ export class ListItemsComponent {
   checkHandler(id: number) {
     const selectedObject = this.items.find(item => item.id === id);
 
-  if (selectedObject) {
-    console.log('clicked for check', selectedObject.value);
-    // Perform any actions with the selected object
-    this.selectedItem = selectedObject;
-  } else {
-    console.error('Item with id not found');
-  }
+    if (selectedObject) {
+      this.selectedItem = selectedObject;
+    }
 
   }
 
-  editHandler() {
-    console.log('clicked for edit');
-  }
+  deleteHandler(id: number) {
+    const itemIndex = this.items.findIndex(item => item.id === id);
 
-  deleteHandler() {
-    console.log('clicked for delete');
+    if (itemIndex !== -1) {
+      // Item found, remove it from the array
+      this.items.splice(itemIndex, 1);
+    } else {
+      console.error('Item with id not found');
+    }
   }
 }

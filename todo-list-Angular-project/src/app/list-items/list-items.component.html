@@ -5,8 +5,7 @@
         </div>
         <div class="buttons">
             <button id="done" (click)="checkHandler(item.id)"><fa-icon [icon]="faCheck"></fa-icon></button>
-            <button id="edit" (click)="editHandler()"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
-            <button id="delete" (click)="deleteHandler()"><fa-icon [icon]="faTrash"></fa-icon></button>
+            <button id="delete" (click)="deleteHandler(item.id)"><fa-icon [icon]="faTrash"></fa-icon></button>
         </div>
     </li>
 </ul>
