@@ -1,0 +1,10 @@
+ul {
+    list-style: none;
+}
+
+ul li {
+    text-align: left;
+    margin-left: -30px;
+    word-break: break-word;
+    margin-bottom: 0.5em;
+}

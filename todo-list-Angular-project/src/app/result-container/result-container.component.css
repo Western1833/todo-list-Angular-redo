@@ -1,0 +1,28 @@
+.result-container {
+    background-color: rgb(81, 147, 190, 0.6);
+    border: 1px solid black;
+    border-radius: 0.4em;
+    width: 350px;
+    max-height: 350px;
+    overflow-y: auto;
+    margin-bottom: 1em;
+    min-height: 100px;
+}
+
+.result-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.result-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.result-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.result-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

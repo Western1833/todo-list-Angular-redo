@@ -1,0 +1,23 @@
+.container {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 450px;
+    height: 550px;
+    border-radius: 0.4em;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgb(66, 189, 111);
+}
+
+.container h3 {
+    font-size: 30px;
+    position: fixed;
+    bottom: 75%;
+}
+
+.container ul {
+    list-style: none;
+}
