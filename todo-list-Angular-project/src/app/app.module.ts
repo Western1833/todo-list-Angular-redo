@@ -7,6 +7,7 @@ import { ContainerComponent } from './container/container.component';
 import { InputFieldComponent } from './input-field/input-field.component';
 import { ListItemsComponent } from './list-items/list-items.component';
 import { ResultContainerComponent } from './result-container/result-container.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ResultContainerComponent } from './result-container/result-container.co
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

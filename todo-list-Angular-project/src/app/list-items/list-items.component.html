@@ -1,12 +1,12 @@
 <ul>
-    <li *ngFor="let item of items">
+    <li *ngFor="let item of items" [ngClass]="{ 'active': isActive }">
         <div class="textContent">
             {{ item }}
         </div>
         <div class="buttons">
-            <button id="done">Done</button>
-            <button id="edit">Edit</button>
-            <button id="delete">Delete</button>
+            <button id="done" (click)="checkHandler()"><fa-icon [icon]="faCheck"></fa-icon></button>
+            <button id="edit" (click)="editHandler()"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+            <button id="delete" (click)="deleteHandler()"><fa-icon [icon]="faTrash"></fa-icon></button>
         </div>
     </li>
 </ul>

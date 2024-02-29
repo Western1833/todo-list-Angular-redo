@@ -22,6 +22,10 @@ ul li {
     gap: 2em;
 }
 
+.active {
+    background-color: rgb(18, 168, 73, 0.6)!important;
+}
+
 .textContent {
     max-width: 200px;
 }
@@ -34,12 +38,14 @@ ul li {
     border: none;
     border-radius: 0.4em;
     padding: 0.3em;
+    background-color: rgb(73, 237, 73);
 }
 
 .buttons #done:hover {
     outline: 1px solid rgb(101, 15, 15);
     background-color: rgb(30, 167, 30);
     border-radius: 0.4em;
+    cursor: pointer;
 }
 
 .buttons #edit {
@@ -47,12 +53,14 @@ ul li {
     border-radius: 0.4em;
     margin-left: 0.2em;
     padding: 0.3em;
+    background-color: rgb(249, 249, 95);
 }
 
 .buttons #edit:hover{
     outline: 1px solid rgb(101, 15, 15);
-    background-color: rgb(219, 219, 58);
+    background-color: rgb(196, 196, 50);
     border-radius: 0.4em;
+    cursor: pointer;
 }
 
 .buttons #delete {
@@ -60,10 +68,12 @@ ul li {
     border-radius: 0.4em;
     margin-left: 0.2em;
     padding: 0.3em;
+    background-color: rgb(250, 66, 66);
 }
 
 .buttons #delete:hover {
     outline: 1px solid rgb(101, 15, 15);
-    background-color: red;
+    background-color: rgb(200, 6, 6);
     border-radius: 0.4em;
+    cursor: pointer;
 }
